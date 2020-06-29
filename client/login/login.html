@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Angular Material style sheet -->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body ng-cloak ng-controller="MainCtrl">
+    <div layout="column" layout-align="center center" layout-fill="layout-fill">
+      <div style="background-size: cover;background-image:url(login-register.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+      padding: 10% 0;
+      position: fixed;" class="login-register" >
+      <div layout="column" class="loginBox md-whiteframe-z1" 
+      style="margin:auto;position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;background-color: #3c4452;width: 400px;height: 
+      300px;padding-top: 15px;">
+       
+      <h2 class="md-toolbar-tools"><span  style="margin: auto;color: #ced4da;font-size: 25px;">Xoş Gəlmişsiniz</span></h2>
+        <form name="loginForm" style="background-color: #3c4452;">
+          <md-content layout="column" class="md-padding"  style="background-color: #3c4452;">
+            <md-input-container>
+              <label  style="color: #ced4da;">Email</label>
+              <input
+                style="color: #ced4da;"
+                required
+                type="email"
+                ng-model="loginModel.username"
+                name="username"
+              />
+              <div ng-messages="loginForm.username.$error">
+                <div ng-message="required">Email daxil edilməyib</div>
+              </div>
+            </md-input-container>
+            <md-input-container>
+              <label  style="color: #ced4da;">Şifrə</label>
+              <input
+                style="color: #ced4da;"
+                required
+                type="password"
+                ng-model="loginModel.password"
+                name="password"
+                md-maxlength="12"
+                 minlength="8"
+              />
+              <div ng-messages="loginForm.password.$error" role="alert">
+                <div ng-message="required">Şifrə daxil edilməyib.</div>
+                <div ng-message="minlength">Şifrə minimum 8 simvol olmalidir</div>
+                <div ng-message="md-maxlength">Şifrə maximum 12 simvol ola bilər</div>
+              </div>
+            </md-input-container>
+            <div layout="row" layout-align="center center">
+              <md-button 
+              style="color: #fff;
+              background-color: #03a9f3;
+              border-color: #03a9f3;text-align: center;
+              user-select: none;border-radius: 60px;padding: .75rem 1.5rem;
+              cursor: pointer;display: block;font-size: 1.09375rem;
+              line-height: 1.5;width: 100%;"
+              type="button"
+              ng-click="login()"
+              class="md-raised md-primary"
+              >Giriş</md-button
+              >
+            <md-divider></md-divider>
+          </md-content>
+        </form>
+      </div>
+    </div>
+    </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

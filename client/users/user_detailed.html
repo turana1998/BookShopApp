@@ -1,0 +1,32 @@
+<md-dialog aria-label="Ətraflı baxış" style="background-color: #353c48;width: 600px;">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>Ətraflı baxış</h2>
+          <span flex></span>
+          <md-button class="md-icon-button" ng-click="cancel()">
+            <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+          </md-button>
+        </div>
+      </md-toolbar>
+      <md-dialog-content>
+        <div layout="column" class="details">
+            <div style="display: flex;flex-direction: row;color: white;">
+                <label>Şəkil:</label>&nbsp;&nbsp;
+                <img style="width:150px; height:100px;" src="{{api_url+user.photo}}" class="rounded"/>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white;">
+                <label>Ad Soyad: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{user.name+' '+user.surname}}</p>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white;" >
+                <label>Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{user.email}}</p>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white;">
+                <label>Rolu: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{user.role.name}}</p>
+            </div>
+        
+          </div>
+      </md-dialog-content>
+</md-dialog>

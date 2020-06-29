@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "5ef77596220e6136d8c040f7"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f",
+    "5ef72e428c66d337644068eb"
+  ],
+  "name": "Mələk",
+  "pageCount": 45,
+  "writerId": "5ef771c957179e1d78fddcd0",
+  "stockCount": 12,
+  "dateAdd": {
+    "$date": "2020-06-27T16:36:38.075Z"
+  },
+  "content": "Qaraqanın yeni romanı sayca dördüncü əsəridir. Mələk adlanan bu əsər Fantastik-drama janrında yazılıb. Əsərdə Azərbaycan reallığı, əsl sevgi və onun acı nəticələri, paxıllıq, kin, nifrət, acgözlük və şəhvət hisslərinin ətrafında baş verən hadisələr oxucunu yeni, sərt həqiqətlərlə dolu bir dünyaya aparır. Gözəl bir qadın cildində bir oğlanın damına düşən mələk və onun taleyindən danışılır.",
+  "photo": "/images/books/94630d96ea66f5bbc4078bb89f53a5e6.jpg",
+  "price": 5.99,
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef781dab8475038885d5701"
+  },
+  "categoryIds": [
+    "5ef72e428c66d337644068eb"
+  ],
+  "name": "5555",
+  "pageCount": 5,
+  "writerId": "5ef76bdb57179e1d78fddcc8",
+  "stockCount": 5,
+  "dateAdd": {
+    "$date": "2020-06-27T17:28:58.807Z"
+  },
+  "content": "kj",
+  "price": 2,
+  "is_active": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef9b33766e2dc34c0113dff"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f"
+  ],
+  "name": "Çərpələng uçuran",
+  "pageCount": 442,
+  "writerId": "5ef9b2bb66e2dc34c0113dfe",
+  "stockCount": 54,
+  "dateAdd": {
+    "$date": "2020-06-29T09:24:07.023Z"
+  },
+  "content": "Xalid Hüseyninin bu debüt romanını artıq yeni əsrin baş romanı, müəllifini isə canlı klassik hesab eləyirlər. \"Çərpələng uçuran\" bu an yaşanan müstəmləkəçilik sonrası yeni müstəmləkəçilik (neokolonial), qloballaşma, mədəniyyətlərarası savaş, vətəndaş müharibəsi və miqrasiya kimi mövzulara bədii baxış açısı gətirir. Bundan əlavə, müəllif xatirələr, aydınlatma, cinsi ilişkilər kimi qavrayışlara da toxunur. Kitab sözün əsl mənasında dostluq, sədaqət, xəyanət, günahlardan arınma haqqındadır və Xalid Hüseyninin bu incə, canayaxın, ironik və sözün yaxşı mənasında sentimental romanı doymadan və göz çəkə bilmədən baxdıqca baxılan möhtəşəm bir rəsm əsərinə bənzəyir. Müəllif, əsərin adından da göründüyü kimi, Əfqan uşaqlarının çərpələng uçurmaq əyləncəsini yada salır. Bu yarışlardan birində əsərin qəhrəmanlarından biri – Həzara (Xəzər) oğlu Həsənin başına dəhşətli hadisə gəlir, o bu hadisəyə dostu bildiyi Əmirin naminə razı olur, ancaq onu kədərləndirmək haqda düşünmür. Həmin dost isə bu dəhşəti kənardan görür, lakin gizlənib səsini çıxarmır. Bununla da faciə böyüyür, getdikcə davam edir. Öz qorxaqlığından çıldıran Əmir ayılanda artıq gec olduğunu düşünür...",
+  "photo": "/images/books/Çərpələng_uçuran.jpeg.jpeg",
+  "price": 21.5,
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef9bcad66e2dc34c0113e00"
+  },
+  "categoryIds": [
+    "5ef7701457179e1d78fddccd"
+  ],
+  "name": "İblis",
+  "pageCount": 120,
+  "writerId": "5ef770a457179e1d78fddccf",
+  "stockCount": 23,
+  "dateAdd": {
+    "$date": "2020-06-29T10:04:29.643Z"
+  },
+  "content": "Burada hadisələr Birinci Dünya müharibəsi zamanı Yaxın Şərqdə baş verir. Əsərin baş qəhrəmanı Arif insani və romantik bir gəncdir. İblisin obrazına müraciət edən Hüseyn Cavid, maddi zənginlik üçün ruhlarını şeytana satan insanları təsvir edirdi. Müəllifə görə, ruhlar azad deyil, şeytan tərəfindən əsir tutulmuşdur. Məhz pis ruh insanların ruhuna hakimdir; hansılar üçün həyatda maddi məhsullar əsas stimuldur. Pyesdə Cavid tərəfindən qarşılanmayan ədalətsiz, qəddar, qanlı bir döyüş əks olunur. \n“İblis” səhnələşdirilən ilk Azərbaycan poetik dramıdır. “İblis”in ilk səhnələşməsi Azərbaycanın teatr həyatı üçün böyük hadisə idi.",
+  "photo": "/images/books/200px-Kazım_Ziya_as_Arif_(Devil_of_Huseyn_Javid).jpg",
+  "price": 3.49,
+  "is_active": true,
+  "__v": 0
+}]

@@ -1,0 +1,137 @@
+
+<div class="page-wrapper">
+   
+    <div class="container-fluid">
+     
+        <div class="row">
+            <!-- Column -->
+            <div class="col-lg-4 col-xlg-3 col-md-5" style="flex: 0 0 33.33333%;
+            max-width: 33.33333%;position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;box-sizing: border-box;">
+                <div class="card" style="position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                background-color: #353c48;
+                background-clip: border-box;
+                border: 0 solid transparent;
+                border-radius: 0;">
+                    <div class="card-body" style="flex: 1 1 auto;
+                    min-height: 1px;
+                    padding: 1.25rem;">
+                        <center class="m-t-30" style="margin-top: 30px;"> <img style="border-radius: 100%;width:150px;" src="{{api_url+loggedUser.photo}}" class="img-circle" width="150" />
+                            <h4  style="font-weight: 500;color: #ced4da;" class="card-title m-t-10">{{loggedUser.name+' '+loggedUser.surname}}</h4>
+                            <h6  style="color: #ced4da;" class="card-subtitle">{{loggedUser.role.name}}</h6>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
+            <div class="col-lg-8 col-xlg-9 col-md-7" style="flex: 0 0 66.66667%;
+            max-width: 66.66667%;" >
+                <div class="card" style="position: relative;
+                display: flex;
+                flex-direction: column;
+                min-width: 0;
+                background-color: #353c48;
+                background-clip: border-box;
+                border: 0 solid transparent;
+                border-radius: 0;">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs profile-tab" role="tablist" style="border-bottom: 1px solid #4F5467">
+                        <li class="nav-item"> <a style="color: #fb9678;border-color: #4F5467;background-color: #353c48;
+                            border-color: #4F5467 #4F5467 #353c48;" class="nav-link active" data-toggle="tab"  role="tab">Şəxsi Kabinet</a> </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="settings" role="tabpanel">
+                            <div class="card-body" style="    flex: 1 1 auto;
+                            min-height: 1px;
+                            padding: 1.25rem;">
+                                <form method="POST" action="" enctype="multipart/form-data" class="form-horizontal form-material">
+                                    <input type="hidden" value="" name="email" />
+                                    <input type="hidden" value="" name="ksekil" />
+                                    <div class="form-group">
+                                        <label for="inputGroupFile01">Şəkil seç</label>
+                                        <div class="custom-file">
+                                            <input  type="file" class="custom-file-input" name="sekil" id="inputGroupFile01">
+                                            <label style="background-color: #3c4452;color: white;" class="custom-file-label" for="inputGroupFile01">(.png .jpeg .gif) fayl seçin</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Köhnə Şifrə</label>
+                                        <div class="col-md-12">
+                                        <input style="background-color: #3c4452" type="password" onkeyup="KohneSifre()" name="kohnesifre" id="kohnesifre" class="form-control form-control-line" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Yeni Şifrə</label>
+                                        <div class="col-md-12">
+                                            <input style="background-color: #3c4452" type="password" minlength="8" name="yenisifre" onkeyup="YeniSifre()" id="yenisifre" class="form-control form-control-line" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-12">Yeni Şifrə Təkrar</label>
+                                        <div class="col-md-12">
+                                            <input style="background-color: #3c4452" type="password" id="yenisifretekrar" name="yenisifretekrar" onkeyup="SifreYoxla()"  class="form-control form-control-line" />
+                                        </div>
+                                    </div> 
+                                    <div class="form-group">
+                                        <div class="col-md-12" id="yoxla"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <button name="profilyenile" class="btn btn-success" id="button_yenile">Yenilə</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+        </div>
+
+    </div>
+
+</div>
+<script>
+
+let btn = document.getElementById("button_yenile");
+// btn.disabled = true;
+
+let tekrar = document.getElementById("yenisifretekrar");
+// tekrar.disabled = true;
+
+
+let yeni = document.getElementById("yenisifre");
+// yeni.disabled = true;
+
+let yaz = document.getElementById("yoxla");
+
+function SifreYoxla() {
+   if (tekrar.value == yeni.value) {
+      yaz.innerHTML = `<div class="alert alert-success" role="alert">Şifrə uyğundur...</div>`;
+      btn.disabled = false;
+   }
+   else {
+      yaz.innerHTML = `<div class="alert alert-danger" role="alert">Şifrə uyğun gəlmir...</div>`;
+   }
+}
+
+function YeniSifre() {
+   if (yeni.value.match(/^(?=(?:.*[A-Z]))(?=(?:.*[a-z]))(?=(?:.*[0-9]))(?=(?:.*[@$!%*#?&]))\S{8,}$/)) {
+      yaz.innerHTML = `<div class="alert alert-success" role="alert">Şifrə güclüdür...</div>`;
+      tekrar.disabled = false;
+   }
+   else {
+      yaz.innerHTML = `<div class="alert alert-danger" role="alert">Böyük və kiçik hərf, xüsusi simvol, rəqəm və minimum 8 simvoldan ibarət olmalıdır...</div>`;
+      tekrar.disabled = true;
+   }
+}
+
+</script>

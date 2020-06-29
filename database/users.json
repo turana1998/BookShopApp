@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "5ef32df67de529367cd2779e"
+  },
+  "name": "Tural",
+  "surname": "İsmayilzade",
+  "email": "turan@mail.ru",
+  "password": "$2b$10$hwuVEYUhXvAgPvXMLJ8UaO2Al6ybzeI7MarNAfkkjlNgOJD79hulK",
+  "passwordStr": "uuyhfq7u",
+  "is_active": false,
+  "photo": "/images/avatars/2 (1).jpeg",
+  "roleId": "5eef4d16a94af00b90147d49",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef32e1a7de529367cd2779f"
+  },
+  "name": "Tural",
+  "surname": "İsmayilzade",
+  "email": "turan@mail.ru",
+  "password": "$2b$10$Z5mxJMGeYs/rNMEuAsDFFuuc26/h/.m1XUwoSWu6H.MOfIaGOGlie",
+  "passwordStr": "71lv73y9",
+  "is_active": false,
+  "photo": "/images/avatars/20180625_161805.jpg",
+  "roleId": "5eef4d16a94af00b90147d4a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef7698257179e1d78fddcc4"
+  },
+  "name": "Turane",
+  "surname": "Ismayilova",
+  "email": "turana221298@gmail.com",
+  "password": "$2b$10$Vag2uwlX7hzQbeQEfAJNSOX1qDD8Wd3TP1CI8MViMY88CN6hPOVAW",
+  "passwordStr": "6hznt57c",
+  "is_active": true,
+  "photo": "/images/avatars/20180425_112807.jpg",
+  "roleId": "5eef4d16a94af00b90147d49",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef769ee57179e1d78fddcc5"
+  },
+  "name": "Tural",
+  "surname": "Ismayilzade",
+  "email": "tural007@bk.ru",
+  "password": "$2b$10$CRsw4Q2SXaldEGqCuwQeGemex1gArZYn1.21yBTo3Ojyk44lTEDj6",
+  "passwordStr": "gjbq61ni",
+  "is_active": true,
+  "photo": "/images/avatars/WhatsApp Image 2019-07-14 at 12.03.39 (1).jpeg",
+  "roleId": "5eef4d16a94af00b90147d4b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef76a2e57179e1d78fddcc6"
+  },
+  "name": "Elvin",
+  "surname": "Abdullayev",
+  "email": "elvin.abdullayev@gmail.com",
+  "password": "$2b$10$aM5oO40yPsHfFeFV1rTOzej58Phv/yO/TRW9KiF4TgGu9jawO8/16",
+  "passwordStr": "r7zh0fpl",
+  "is_active": false,
+  "photo": "/images/avatars/kristian-egelund-wwqRpSNBPq4-unsplash.png",
+  "roleId": "5eef4d16a94af00b90147d4a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef76a4f57179e1d78fddcc7"
+  },
+  "name": "s",
+  "surname": "d",
+  "email": "d",
+  "password": "$2b$10$GIPWHqA95UE9YXAX2gPk4eTh9KRRz3qVh3SHgwjT0CausUS6LnXWS",
+  "passwordStr": "41eggd5i",
+  "is_active": false,
+  "roleId": "5eef4d16a94af00b90147d4a",
+  "__v": 0
+}]

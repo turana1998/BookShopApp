@@ -1,0 +1,42 @@
+
+<h1>Xoş Gəlmişsiniz</h1>
+<div style="color: black;display: flex;">
+    <div  class="card" ng-repeat="book in books track by $index" style="margin-right: 35px;width: 253px;">
+        <img class="card-img-top" style="width: 250px; height: 300px;"  src="{{api_url+book.photo}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{book.price}} AZN</h5>
+          <p class="card-text">{{book.content.substring(0,100)}}...</p>
+          <a href="#/books" class="btn btn-primary">Ətraflı Baxış</a>
+        </div>
+      </div>
+</div>
+<!-- <div ng-repeat="book in books track by $index" flex-xs flex-gt-xs="50" layout="row">
+    <md-card>
+      <md-card-header>
+        <md-card-avatar>
+          <md-icon class="md-avatar-icon" md-svg-icon="img/icons/menu.svg"></md-icon>
+        </md-card-avatar>
+        <md-card-header-text>
+          <span class="md-title">Title</span>
+          <span class="md-subhead">subhead</span>
+        </md-card-header-text>
+      </md-card-header>
+      <img ng-src="{{api_url+book.photo}}" style="width: 200px;" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">In-card actions</span>
+          <span class="md-subhead">Description</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="start center">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+      </md-card-actions>
+      <md-card-content>
+        <p>
+          The titles of Washed Out's breakthrough song and the first single from Paracosm share the
+          two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+        </p>
+      </md-card-content>
+    </md-card>
+  </div> -->

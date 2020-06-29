@@ -1,0 +1,32 @@
+   
+   <div class="col-12">
+    <div>
+        <div class="card-table">
+            <h4 class="card-title mt-3" style="font-weight: 300;
+            line-height: 1.2;
+            color: inherit;font-size: 1.125rem;">Kateqoriya</h4>
+            <a href="#/category_add"><button style="float:right;" class="btn btn-outline-primary btn-sm mb-3">Əlavə Et</button></a>
+            <div class="Message"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr style="color: #ced4da;font-size: 14px;font-weight: 500;border-bottom: 2px solid #4F5467;border-top: 1px solid #4F5467">
+                            <th>Kateqoriya Adi</th>
+                            <th>Əməliyyatlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr ng-repeat="category in categories track by $index" style="color: #ced4da;font-size: 14px;">
+                                <td>{{category.name}}</td>
+                                <td>
+                                    <button ng-click="delete(category)"
+                                        class="btn btn-outline-danger btn-sm">Sil</button>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

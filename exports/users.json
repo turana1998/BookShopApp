@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "5eef6c64e0fba64c98fe6b3d"
+  },
+  "name": "Anar",
+  "surname": "Babacan",
+  "email": "anarbabacan@gmail.com",
+  "password": "$2b$10$GoEwo2TWoAX1j0nAlTRQaOYmlDSEFldLuJlygCDgD6EuPr3ekA3Za",
+  "passwordStr": "v9urx67k",
+  "is_active": true,
+  "roleId": "5eef4d16a94af00b90147d49",
+  "__v": 0
+}]

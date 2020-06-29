@@ -1,0 +1,54 @@
+
+
+<md-dialog aria-label="Ətraflı baxış" style="background-color: #353c48;width: 600px;">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+          <h2>Ətraflı baxış</h2>
+          <span flex></span>
+          <md-button class="md-icon-button" ng-click="cancel()">
+            <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+          </md-button>
+        </div>
+      </md-toolbar>
+      <md-dialog-content>
+        <div layout="column" class="details">
+            <div style="display: flex;flex-direction: row;color: white">
+                <label>Şəkil:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img style="width:150px; height:100px;" src="{{api_url+book.photo}}" class="rounded"/>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white" >
+                <label>Ad:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{book.name}}</p>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white">
+              <label>Tarix:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>{{book.dateAdd.substring(0,10)}}</p>
+          </div>
+            <div style="display: flex;flex-direction: row;color: white">
+                <label>Səhifə Sayı:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{book.pageCount}}</p>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white">
+              <label>Qiymet:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>{{book.price}}</p>
+          </div>
+            <div style="display: flex;flex-direction: row;color: white">
+                <label>Yazıçı:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{book.writer.name+' '+book.writer.surname}}</p>
+            </div>
+            <div style="display: flex;flex-direction: row;color: white">
+              <label>Kateqoriya:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>{{book.categoryText}}</p>
+          </div>
+            <div style="display: flex;flex-direction: row;color: white">
+              <label>Say:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p>{{book.stockCount}}</p>
+          </div>
+            <div style="display: flex;flex-direction: row;color: white">
+                <label>Mezmun:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>{{book.content}}</p>
+            </div>
+        
+          </div>
+      </md-dialog-content>
+</md-dialog>

@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "5ef704af1f3b682c1492ab3f"
+  },
+  "name": "dram",
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef72e428c66d337644068eb"
+  },
+  "name": "romantik",
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef7700457179e1d78fddccb"
+  },
+  "name": "dedektiv",
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef7700c57179e1d78fddccc"
+  },
+  "name": "elmi",
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef7701457179e1d78fddccd"
+  },
+  "name": "felsefi",
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef7702157179e1d78fddcce"
+  },
+  "name": "uşaq aləmi",
+  "is_active": true,
+  "__v": 0
+}]

@@ -1,0 +1,55 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card" style="background-color: #3c4452;">
+            <div class="card-body">
+                <h4 class="card-title"style="font-weight: 300;
+                line-height: 1.2;
+                color: inherit;font-size: 1.125rem;">İstifadəçi Əlavə</h4>
+                <form class="mt-4" action="#" method="POST" >
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <label>Ad</label>
+                        <input ng-model="user.name">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <label>Soyad</label>
+                        <input ng-model="user.surname">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <label>Email</label>
+                        <input ng-model="user.email">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <label style="color: #ced4da;font-size: 14px;font-weight: 500;">Rolu</label>
+                        <md-select ng-model="user.roleId">
+                            <md-option ng-repeat="role in roles" value="{{role._id}}">
+                                {{role.name}}
+                            </md-option>
+                        </md-select>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <label>Şifrə</label>
+                        <input ng-model="user.password">
+                        <md-button ng-click="generatePass()">Generasiya</md-button>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex-gt-xs required>
+                        <input type="file" id="file-upload">
+                    </md-input-container>
+
+
+
+                    <div>
+                        <md-button type="button" class="btn btn-primary" name="ist_elave">Ləğv et</md-button>
+                        <md-button type="button" class="btn btn-primary" ng-click="submit()">Əlavə Et</md-button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="user-detailed.html"></div>

@@ -1,0 +1,45 @@
+   
+   <div class="col-12">
+    <div>
+        <div class="card-table">
+            <h4 class="card-title mt-3" style="font-weight: 300;
+            line-height: 1.2;
+            color: inherit;font-size: 1.125rem;">Yazıçıların Siyahısı</h4>
+            <button style="float:right;" class="btn btn-outline-primary btn-sm mb-3" ng-click="newWriter()">Əlavə Et</button>
+            <div class="Message"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr  style="color: #ced4da;font-size: 14px;font-weight: 500;border-bottom: 2px solid #4F5467;border-top: 1px solid #4F5467">
+                            <th>Şəkil</th>
+                            <th>Ad Soyad</th>
+                            <th>Əlaqə Nömrəsi</th>
+                            <th>Kateqoriyalar</th>
+                            <th>Kitabların Sayı</th>
+                            <th>Əməliyyatlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr ng-repeat="writer in writers track by $index"  style="color: #ced4da;font-size: 14px;">
+                                <td><img width="55" height="55" src="{{api_url+writer.photo}}" alt=""></td>
+                                <td>{{writer.name+" "+writer.surname}}</td>
+                                <td>{{writer.contact}}</td>
+                                <td>{{writer.categoryText}}</td>
+                                <td>{{writer.bookCount}}</td>
+                                <td>
+                                    <button ng-click="showDetailModal($event,writer)" 
+                                    class="btn btn-outline-info btn-sm">Bax</button>
+                                        <button
+                                        ng-click="edit(writer)"
+                                        class="btn btn-outline-success btn-sm">Redaktə Et</button>
+                                    <button
+                                        ng-click="delete(writer)"
+                                        class="btn btn-outline-danger btn-sm">Sil</button>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

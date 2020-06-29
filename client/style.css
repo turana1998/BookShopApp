@@ -1,0 +1,129 @@
+
+  body, html {
+    overflow-x: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+.list{
+    color: #8d97ad;
+    font-size: 14px;
+    font-weight: 400;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: 50px;
+    background-color: white;
+
+}
+#customers tr{
+    border: 1px solid grey;
+}
+
+#customers td, #customers th {
+
+    padding: 18px;
+
+}
+#customers tr:hover {background-color: #ddd;
+    border: 3px solid #ac00e6 ;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 50px;
+    margin:auto;
+
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+  a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+  }
+  .previous {
+      background-color: #f1f1f1;
+      color: black;
+  }
+
+  .next {
+      background-color: #4CAF50;
+      color: white;
+  }
+
+  .round {
+      border-radius: 50%;
+  }
+  .user-profile {
+    margin-top: 20px;
+    width: 200px
+  }
+  
+  .user-profile .u-dropdown {
+    display: block;
+    text-align: center;
+  }
+  
+  .user-profile .user-pro-body img {
+    width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+    
+  }
+  
+  .user-profile .dropdown-menu {
+    right: 0;
+    width: 180px;
+    left: 0;
+    top: 20px!important;
+    margin: 0 auto;
+  }
+  .img-circle
+  {
+    width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .footer
+  {
+    background-color:#353c48;
+    text-align: center;
+    color: gray;
+  }
+  .md-block label,input
+  {
+    color: #ced4da;font-size: 14px;font-weight: 500;
+  }
+  .details div
+  {
+    display: block;
+    margin-bottom: 25px;
+    
+  }

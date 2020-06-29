@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5ef741b83632db2f502030f7"
+  },
+  "categoryIds": [],
+  "bookCount": 44,
+  "is_active": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef76bdb57179e1d78fddcc8"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f",
+    "5ef7700457179e1d78fddccb"
+  ],
+  "bookCount": 6,
+  "is_active": true,
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "5ef76c2457179e1d78fddcca"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f"
+  ],
+  "bookCount": 5,
+  "is_active": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef770a457179e1d78fddccf"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f",
+    "5ef72e428c66d337644068eb"
+  ],
+  "bookCount": 9,
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef771c957179e1d78fddcd0"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f",
+    "5ef7701457179e1d78fddccd"
+  ],
+  "bookCount": 11,
+  "is_active": true,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef78134b8475038885d5700"
+  },
+  "categoryIds": [
+    "5ef7700c57179e1d78fddccc"
+  ],
+  "bookCount": 25,
+  "is_active": false,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ef9b2bb66e2dc34c0113dfe"
+  },
+  "categoryIds": [
+    "5ef704af1f3b682c1492ab3f",
+    "5ef7700c57179e1d78fddccc"
+  ],
+  "bookCount": 4,
+  "is_active": true,
+  "__v": 0
+}]

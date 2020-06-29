@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "5eef4d16a94af00b90147d49"
+  },
+  "name": "Admin",
+  "is_admin": true
+},{
+  "_id": {
+    "$oid": "5eef4d16a94af00b90147d4a"
+  },
+  "name": "Satici",
+  "is_admin": true
+},{
+  "_id": {
+    "$oid": "5eef4d16a94af00b90147d4b"
+  },
+  "name": "Musteri",
+  "is_admin": true
+}]

@@ -1,0 +1,49 @@
+   
+   <div class="col-12">
+    <div>
+        <div class="card-table">
+            <h4 class="card-title mt-3" style="font-weight: 300;
+            line-height: 1.2;
+            color: inherit;font-size: 1.125rem;">Kitablar</h4>
+            <a href="#/books_add"><button style="float:right;" class="btn btn-outline-primary btn-sm mb-3">Əlavə Et</button></a>
+            <div class="Message"></div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr style="color: #ced4da;font-size: 14px;font-weight: 500;border-bottom: 2px solid #4F5467;border-top: 1px solid #4F5467">
+                            <th>Şəkil</th>
+                            <th>Adı</th>
+                            <th>Kateqoriyası</th>
+                            <th>Say</th>
+                            <th>Qiymeti</th>
+                            <th>Səhifə Sayı</th>
+                            <th>Yazıçı</th>
+                            <th>Əməliyyatlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr ng-repeat="book in books track by $index" style="color: #ced4da;font-size: 14px;">
+                                <td><img style="height: 55px;width: 55px;" src="{{api_url+book.photo}}"/></td>
+                                <td>{{book.name}}</td>
+                                <td>{{book.categoryText}}</td>
+                                <td>{{book.stockCount}}</td>
+                                <td>{{book.price}}</td>
+                                <td>{{book.pageCount}}</td>
+                                <td>{{book.writer.name+' '+book.writer.surname}}</td>
+                                <td>
+                                    <button ng-click="showDetailModal($event,book)" 
+                                    class="btn btn-outline-info btn-sm">Bax</button>
+                                        <button
+                                        ng-click="edit(book)"
+                                        class="btn btn-outline-success btn-sm">Redaktə Et</button>
+                                    <button ng-click="delete(book)"
+                                        class="btn btn-outline-danger btn-sm">Sil</button>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
